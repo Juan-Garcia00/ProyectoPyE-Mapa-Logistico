@@ -1,4 +1,4 @@
-"""Parte 2 — Sensibilidad a la condición inicial (Persona B)."""
+"""Parte 2 — Sensibilidad a la condición inicial (2. Experimento de sensibilidad)."""
 
 import matplotlib.pyplot as plt
 import numpy as np
