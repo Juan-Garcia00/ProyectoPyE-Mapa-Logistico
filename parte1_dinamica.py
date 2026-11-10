@@ -1,4 +1,4 @@
-"""Parte 1 — Dinámica del mapa logístico"""
+"""Parte 1 — Dinámica del mapa logístico (1. Estudio propedéutico)."""
 
 import matplotlib.pyplot as plt
 import numpy as np
