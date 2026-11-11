@@ -1,3 +1,5 @@
+"""Parte 4 — 3.3 Dependencia."""
+
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy import stats

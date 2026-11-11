@@ -1,3 +1,5 @@
+"""Parte 5 — Uniformización (4. Uniformización)."""
+
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy import stats
