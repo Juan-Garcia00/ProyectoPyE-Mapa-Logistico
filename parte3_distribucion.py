@@ -1,5 +1,3 @@
-"""Parte 3 — Distribución de x_1000 (3.1 y 3.2)."""
-
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy import stats
