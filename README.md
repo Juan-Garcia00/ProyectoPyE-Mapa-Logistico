@@ -10,7 +10,7 @@ El código estudia el mapa logístico x<sub>n+1</sub> = r·x<sub>n</sub>(1 − x
 ## Requisitos
 
 - Python 3.10 o superior
-- Las bibliotecas de `requirements.txt`: NumPy, SciPy, Matplotlib y statsmodels
+- Las bibliotecas de `requirements.txt`: NumPy, SciPy y Matplotlib
 
 ## Instalación
 
@@ -36,7 +36,7 @@ python main.py
 
 Esto ejecuta todas las partes en orden:
 
-- Las **tablas** y los resultados numéricos se imprimen en la consola.
+- Las **tablas** y los resultados numéricos se imprimen en la consola, junto con la decisión de cada test (se rechaza o no H0 con α = 0,05).
 - Las **figuras** se guardan como PNG en la carpeta `figuras/`, que se crea automáticamente.
 
 No hace falta ingresar ningún dato: el programa corre de principio a fin sin interacción.
@@ -55,10 +55,10 @@ Las partes 4 y 5 necesitan la muestra que genera la parte 3, así que se ejecuta
 | --- | --- | --- |
 | `main.py` | Programa principal: ejecuta todas las partes en orden | — |
 | `comun.py` | Funciones compartidas: mapa logístico, trayectorias, guardado de figuras | — |
-| `parte1_dinamica.py` | Trayectorias por régimen, solución explícita para r = 4, diagrama de bifurcación, ventana periódica | 1. Estudio propedéutico |
+| `parte1_dinamica.py` | Trayectorias por régimen, solución explícita para r = 4, diagrama de bifurcación con la ventana de período 3 marcada, comportamiento con varias semillas | 1. Estudio propedéutico |
 | `parte2_sensibilidad.py` | Separación de trayectorias con semillas cercanas | 2. Experimento de sensibilidad |
 | `parte3_distribucion.py` | Muestra de 10 000 valores x<sub>1000</sub>, histograma, FDA, estadísticos y tests de Kolmogórov–Smirnov | 3.1 y 3.2 |
-| `parte4_dependencia.py` | Tests de independencia (rachas, Ljung–Box, chi-cuadrado sobre pares) | 3.3 Dependencia |
+| `parte4_dependencia.py` | Correlación entre valores consecutivos y test chi-cuadrado de independencia | 3.3 Dependencia |
 | `parte5_uniformizacion.py` | Transformación u = (2/π)·arcsin(√x) y verificación de uniformidad | 4. Uniformización |
 | `figuras/` | Figuras generadas por el programa | — |
 | `requirements.txt` | Dependencias de Python | — |
